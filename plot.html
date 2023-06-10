@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Overlay</title>
+    <style>
+      #overlay {
+        position: fixed;
+        display: none;
+        height: 100%;
+        width: 100%;
+        background-color: lightblue;
+        opacity: 50%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay" onclick="hideOverlay()"></div>
+    <h2>CLICK TO SEE OVERLAY</h2>
+    <button onclick="showOverlay()">Open Overlay</button>
+    <script>
+      function showOverlay() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      function hideOverlay() {
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
+
